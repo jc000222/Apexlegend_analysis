@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project 2"
+authors = [{name = "Ruoyu Chen", email = "rchen2@mail.yu.edu"}]
+maintainers = [{name = "Ruoyu Chen"},]
+description = "A project 2 for AP."
+readme = "README.md"
+keywords = ["data visualization", "summary statistics", "data animation"]
+license = {file = "LICENSE"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: Matplotlib",
+    "Intended Audience :: assignment",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.11",
+
+]
+requires-python = ">=3.9"
+dependencies = [
+    "matplotlib>=3.8.2",
+    "numpy>=1.26.1",
+    "pandas>=2.1.1",
+    "seaborn>=0.13.0",
+    "request>=2.31.0",
+    "BeautifulSoup>=4",
+
+]
+dynamic = ["version"]
