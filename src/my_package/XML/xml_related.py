@@ -1,6 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
+from requests.exceptions import HTTPError
+
 class XmlLoad:
     def __init__(self,url):
         """
@@ -11,6 +13,7 @@ class XmlLoad:
         """
         self.url = url
         self.robotstxt = self.get_robotstxt()
+
     def get_robotstxt(self,new_url=None):
         """
         Fetches the content of the robots.txt file for the specified URL.
@@ -25,13 +28,15 @@ class XmlLoad:
 
         if new_url is not None:
             robots_url=new_url+"/robots.txt"
-
-        response = requests.get(robots_url)
-        if response.status_code == 200:
-            return response.text
-        else:
-            print("Failed to fetch robots.txt")
-            return None
+        try:
+            response = requests.get(robots_url)
+            if response.status_code == 200:
+                return response.text
+        except HTTPError as e:
+            print(f"HTTP error while getting robots.txt: {e}")
+        except Exception as e:
+            print(f"An error occurred while getting robots.txt: {e}")
+            
     def get_sitemap(self,new_url=None):
         """
         Extracts sitemap URLs from the fetched robots.txt content.
