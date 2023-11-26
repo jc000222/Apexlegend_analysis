@@ -8,7 +8,7 @@ setup(
     author_email='rchen2@mail.yu.edu',
     license='MIT',
     url='https://github.com/jc000222/Apexlegend_analysis',
-    packages=['src.my_package','src.img','src.auth','src.my_package.XML','src.my_package.API','src.my_package.Scrape','src.my_package.Analysis','src.my_package.Selenium'],
+    packages=['src.my_package','src.img','src','src.my_package.XML','src.my_package.API','src.my_package.Scrape','src.my_package.Analysis','src.my_package.Selenium'],
     install_requires=[
         'matplotlib>=3.0.2',
         'mplfinance>=0.12.7a4',
