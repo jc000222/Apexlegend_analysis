@@ -31,15 +31,5 @@ dynamic = ["version"]
 Repository = "https://github.com/jc000222/Apexlegend_analysis"
 Reference = "https://apexlegendsstatus.com/"
 
-[tool.setuptools.packages.find]
-where = ["src",
-        "src.apex_analysis_package",
-        "src.img",
-        "src",
-        "src.apex_analysis_package.XML",
-        "src.apex_analysis_package.API",
-        "src.apex_analysis_package.Scrape",
-        "src.apex_analysis_package.Analysis",
-        "src.apex_analysis_package.Selenium",]
 
 
