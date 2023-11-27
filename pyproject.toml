@@ -14,20 +14,6 @@ description = "Apex Legend analysis: project 2 for Analytics Programming"
 readme = "README.md"
 keywords = ["data visualization", "APEX Legends", "Analytics Programming"]
 license = {text = "MIT License"}
-classifiers = [
-    "Development Status :: 4 - Beta",
-    "Framework :: Matplotlib",
-    "Intended Audience :: Education",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
-    "Topic :: Scientific/Engineering :: Artificial Intelligence",
-    "Topic :: Scientific/Engineering :: Visualization",
-]
 requires-python = ">=3.10"
 dependencies = [
     "matplotlib>=3.3",
@@ -55,9 +41,5 @@ where = ["src",
         "src.apex_analysis_package.Scrape",
         "src.apex_analysis_package.Analysis",
         "src.apex_analysis_package.Selenium",]
-
-[tool.setuptools.package-data]
-"data_morph.data.starter_shapes" = ["*"]
-"data_morph.plotting.config" = ["*"]
 
 
