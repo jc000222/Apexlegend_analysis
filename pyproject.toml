@@ -31,7 +31,11 @@ dynamic = ["version"]
 Repository = "https://github.com/jc000222/Apexlegend_analysis"
 Reference = "https://apexlegendsstatus.com/"
 
+[project.scripts]
+apex_analysis = "apex_analysis_package.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[tool.poetry]
+name = "apex_analysis"
