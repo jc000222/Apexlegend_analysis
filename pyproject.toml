@@ -39,6 +39,7 @@ dependencies = [
     "selenium>=4.4.3",
     "requests>=2.27.1"
 ]
+dynamic = ["version"]
 
 [project.urls]
 Repository = "https://github.com/jc000222/Apexlegend_analysis"
