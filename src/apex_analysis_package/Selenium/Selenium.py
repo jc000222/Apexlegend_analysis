@@ -4,6 +4,7 @@ from selenium.webdriver.chrome.options import Options
 import time
 from tqdm import tqdm
 
+
 class Account_progress:
     def __init__(self, lv, Purchased_packs, play_since):
         self.lv = lv
