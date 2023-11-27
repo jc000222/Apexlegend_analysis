@@ -1,10 +1,10 @@
 """Run Apex analysis CLI for part 1 to part 4 """
-from src.apex_analysis_package.XML.xml_related import XmlLoad
-from src.apex_analysis_package.API.api_related import ApiProcess
-from src.apex_analysis_package.Scrape.scraper import Scrape
-from src.apex_analysis_package.Analysis.EDA import Analysis
-from src.apex_analysis_package.Selenium.Selenium import Account_progress
-from src import auth
+from apex_analysis_package.XML.xml_related import XmlLoad
+from apex_analysis_package.API.api_related import ApiProcess
+from apex_analysis_package.Scrape.scraper import Scrape
+from apex_analysis_package.Analysis.EDA import Analysis
+from apex_analysis_package.Selenium.Selenium import Account_progress
+import auth
 
 
 def main():
