@@ -46,7 +46,6 @@ class ApiProcess:
             if response.status_code == 200:
                 data = json.loads(response.text)
                 uid_value = data["uid"]
-                print("uid:", uid_value)
                 return uid_value
         except HTTPError as e:
             print(f"HTTP error while getting uid: {e}")
