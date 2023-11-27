@@ -32,4 +32,6 @@ Repository = "https://github.com/jc000222/Apexlegend_analysis"
 Reference = "https://apexlegendsstatus.com/"
 
 
+[tool.setuptools.packages.find]
+where = ["src"]
 
