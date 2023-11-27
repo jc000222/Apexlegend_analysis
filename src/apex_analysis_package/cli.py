@@ -4,7 +4,6 @@ from apex_analysis_package.API.api_related import ApiProcess
 from apex_analysis_package.Scrape.scraper import Scrape
 from apex_analysis_package.Analysis.EDA import Analysis
 from apex_analysis_package.Selenium.Selenium import Account_progress
-import auth
 
 
 def main():
@@ -55,7 +54,7 @@ def part1():
 def part2():
     player_name = "nndkale"
     platform = "PC"
-    loader = ApiProcess(auth.auth_key(), player_name, platform)
+    loader = ApiProcess("97023367373666600e64029e0e474418", player_name, platform)
     player_name = "nndkale"
     uid = loader.get_uid(player_name)
     print("uid of the player is:", uid)
