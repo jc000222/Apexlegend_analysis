@@ -1,3 +1,4 @@
+"""this python file is for scrape for Apex analysis"""
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
