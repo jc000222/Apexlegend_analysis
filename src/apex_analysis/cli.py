@@ -65,7 +65,7 @@ def part2():
 
 def part3():
     scrape_webpage = "https://apexlegendsstatus.com/game-stats/legends-pick-rates"
-    scraper = Scrape(scrape_webpage)
+    scraper = Scraper(scrape_webpage)
     df_legend = scraper.get_df()
     print(df_legend)
     return df_legend
