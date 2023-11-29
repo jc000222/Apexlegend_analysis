@@ -5,7 +5,7 @@ import pandas as pd
 import re
 
 
-class Scrape:
+class Scraper:
     def __init__(self, url):
         """
         Initialize Scrape class.
